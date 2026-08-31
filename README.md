@@ -1,7 +1,5 @@
 # Marcus Paredes Portfolio Website
 
-Responsive portfolio website for Marcus Paredes, positioned as a Web Developer and Automation Specialist.
-
 ## Live Project Links
 
 - Lumière Skin Studio: https://lumiere-skinstudio.vercel.app/
