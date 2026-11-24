@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#063949" />
   <title>Marcus Paredes | Web Developer & Automation Specialist</title>
   <meta name="description" content="Marcus Paredes is a web developer and automation specialist building clean business websites, landing pages, and workflow automations for service brands and small businesses." />
 
@@ -25,6 +26,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <noscript>
+    <style>
+      .project-demo { display: none; }
+      @media (max-width: 61.25rem) {
+        .site-header { position:static; transform:none; margin:1rem auto; flex-wrap:wrap; border-radius:1.5rem; }
+        .menu-toggle { display:none; }
+        .site-header .main-nav { position:static; display:flex; flex-wrap:wrap; visibility:visible; opacity:1; pointer-events:auto; transform:none; box-shadow:none; }
+        .hero { padding-top:1rem; }
+      }
+    </style>
+  </noscript>
 
   <script type="application/ld+json">
 {
@@ -78,35 +90,37 @@
 }
   </script>
 </head>
-<body>
-  <div class="cursor-glow"></div>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <a href="#top" class="logo" aria-label="Marcus Paredes Home">
       <span>MP</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span> <span></span> <span></span>
     </button>
 
-    <nav class="main-nav">
+    <nav class="main-nav" id="primary-navigation" aria-label="Primary navigation">
       <a href="#work">Work</a>
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="#about">About</a>
       <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
       <a href="https://zcal.co/i/xyi4-nOt" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="hero section-pad">
       <div class="hero-card reveal">
         <div class="hero-lines" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Web Developer • Automation Specialist</p>
-          <h1>Marcus<br><span>Paredes</span></h1>
+          <p class="eyebrow"><span>Web Developer</span> <span class="eyebrow-separator" aria-hidden="true"></span> <span>Automation Specialist</span></p>
+          <h1>Marcus <br><span>Paredes</span></h1>
           <p class="hero-copy">
             I build clean business websites and workflow automations that help small businesses look credible, save time, and turn visitors into inquiries.
           </p>
@@ -118,7 +132,7 @@
 
         <div class="hero-person">
           <div class="portrait-card real-photo-card">
-            <img src="assets/marcus-profile.png" alt="Marcus Paredes" class="portrait-photo" />
+            <img src="assets/marcus-profile.png" width="960" height="960" alt="Marcus Paredes" class="portrait-photo" />
             <div class="portrait-badge">Available for Projects</div>
           </div>
         </div>
@@ -133,14 +147,14 @@
         </div>
       </div>
 
-      <div class="floating-nav reveal delay-1">
+      <nav class="floating-nav reveal delay-1" aria-label="Section shortcuts">
         <a href="#top" class="active">Home</a>
         <a href="#work">Work</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="https://zcal.co/i/xyi4-nOt" target="_blank" rel="noopener" class="book-link">Book Call</a>
-      </div>
+      </nav>
     </section>
 
     <section class="intro-strip reveal">
@@ -150,7 +164,7 @@
         <span>Systems</span>
         <span>Brand Presence</span>
       </div>
-      <div>
+      <div aria-hidden="true">
         <span>Websites</span>
         <span>Automation</span>
         <span>Systems</span>
@@ -162,29 +176,29 @@
       <div class="section-heading reveal balanced-heading">
         <div>
           <p class="pill">Services</p>
-          <h2><span>Websites &amp; Automations</span><span>For Real Business Use.</span></h2>
+          <h2><span>Websites &amp; Automations</span> <span>For Real Business Use.</span></h2>
         </div>
         <p class="section-subtext">Clean websites, practical workflows, and conversion-focused pages for businesses that need to look credible and operate smoother.</p>
       </div>
 
       <div class="service-grid">
         <article class="service-card reveal">
-          <div class="service-icon">⌁</div>
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m9 9-3 3 3 3M15 9l3 3-3 3"/></svg></div>
           <h3>Website Development</h3>
           <p>Modern business websites, landing pages, portfolio sites, clinic sites, restaurant sites, and service pages built with responsive layouts.</p>
         </article>
         <article class="service-card reveal delay-1">
-          <div class="service-icon">✦</div>
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 2 5 13h6l-1 9 8-12h-6l1-8Z"/></svg></div>
           <h3>Automation</h3>
           <p>Workflow and task automations for lead capture, customer replies, admin work, reminders, handoffs, and repeatable business processes.</p>
         </article>
         <article class="service-card reveal delay-2">
-          <div class="service-icon">▣</div>
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>
           <h3>Conversion Design</h3>
           <p>Clear page structure, polished visual hierarchy, strong CTAs, and trust-building sections designed to turn visitors into inquiries.</p>
         </article>
         <article class="service-card reveal delay-3">
-          <div class="service-icon">↗</div>
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 4 7v5c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V7l-8-4Z"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></div>
           <h3>Website Care</h3>
           <p>Basic updates, improvements, bug fixes, content changes, and technical support so your website keeps working after launch.</p>
         </article>
@@ -202,70 +216,50 @@
 
       <div class="work-grid">
 
-        <article class="project-card reveal delay-1 live-project-card card-lumiere">
-          <a href="https://lumiere-skinstudio.vercel.app/" target="_blank" rel="noopener" aria-label="Open Lumiere Skin Studio website">
-            <div class="project-preview embedded-site-preview">
-              <div class="browser-top"><span></span><span></span><span></span></div>
-              <div class="live-site-window">
-                <iframe
-                  src="https://lumiere-skinstudio.vercel.app/"
-                  title="Live preview of Lumière Skin Studio website"
-                  loading="lazy"
-                  class="live-site-iframe"
-                ></iframe>
-              </div>
+        <article class="project-card reveal delay-1">
+          <div class="project-info">
+            <p>Website Development</p>
+            <h3>Lumière Skin Studio</h3>
+            <span class="project-description">Responsive skin clinic website designed for service education, appointment booking, and client trust.</span>
+            <a class="project-link" href="https://lumiere-skinstudio.vercel.app/" target="_blank" rel="noopener" aria-label="Open Lumière Skin Studio website (opens in a new tab)">View Live Site <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5M19 5l-8 8M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg></a>
+          </div>
+          <details class="project-demo">
+            <summary>Show live preview</summary>
+            <div class="live-site-window">
+              <iframe class="live-site-iframe" title="Live preview of Lumière Skin Studio" loading="lazy" data-src="https://lumiere-skinstudio.vercel.app/"></iframe>
             </div>
-            <div class="project-info project-info-minimal">
-              <p>Website Development</p>
-              <h3>Lumière Skin Studio</h3>
-              <span class="sr-only">Responsive skin clinic website designed for service education, appointment booking, and client trust.</span>
-              <div class="project-link">View Live Site ↗</div>
-            </div>
-          </a>
+          </details>
         </article>
 
-
-        <article class="project-card reveal delay-2 live-project-card card-wedding">
-          <a href="https://angelo-alexandra-wedding-website.vercel.app/" target="_blank" rel="noopener" aria-label="Open Angelo and Alexandra wedding website">
-            <div class="project-preview embedded-site-preview">
-              <div class="browser-top"><span></span><span></span><span></span></div>
-              <div class="live-site-window">
-                <iframe
-                  src="https://angelo-alexandra-wedding-website.vercel.app/"
-                  title="Live preview of Angelo and Alexandra wedding website"
-                  loading="lazy"
-                  class="live-site-iframe"
-                ></iframe>
-              </div>
+        <article class="project-card reveal delay-2">
+          <div class="project-info">
+            <p>Digital Experience</p>
+            <h3>Wedding Invitation Website</h3>
+            <span class="project-description">Elegant responsive wedding invitation website with event details, story, location, and RSVP sections.</span>
+            <a class="project-link" href="https://angelo-alexandra-wedding-website.vercel.app/" target="_blank" rel="noopener" aria-label="Open Angelo and Alexandra wedding website (opens in a new tab)">View Live Site <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5M19 5l-8 8M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg></a>
+          </div>
+          <details class="project-demo">
+            <summary>Show live preview</summary>
+            <div class="live-site-window">
+              <iframe class="live-site-iframe" title="Live preview of Angelo and Alexandra wedding website" loading="lazy" data-src="https://angelo-alexandra-wedding-website.vercel.app/"></iframe>
             </div>
-            <div class="project-info project-info-minimal">
-              <p>Digital Experience</p>
-              <h3>Wedding Invitation Website</h3>
-              <span class="sr-only">Elegant responsive wedding invitation website with event details, story, location, and RSVP sections.</span>
-              <div class="project-link">View Live Site ↗</div>
-            </div>
-          </a>
+          </details>
         </article>
 
-        <article class="project-card reveal delay-2 live-project-card card-nexhaul">
-          <a href="https://nexhaul-logistics.vercel.app/" target="_blank" rel="noopener" aria-label="Open NexHaul Logistics website">
-            <div class="project-preview embedded-site-preview">
-              <div class="browser-top"><span></span><span></span><span></span></div>
-              <div class="live-site-window">
-                <img
-                  src="assets/nexhaul-logistics.png"
-                  alt="Preview of the NexHaul Logistics website"
-                  loading="lazy"
-                  class="project-preview-image"
-                />
-              </div>
+        <article class="project-card reveal delay-3">
+          <div class="project-info">
+            <p>Website Development</p>
+            <h3>NexHaul Logistics</h3>
+            <span class="project-description">Freight logistics concept site covering shipping services, carrier partnerships, and quote requests.</span>
+            <a class="project-link" href="https://nexhaul-logistics.vercel.app/" target="_blank" rel="noopener" aria-label="Open NexHaul Logistics website (opens in a new tab)">View Live Site <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5M19 5l-8 8M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg></a>
+          </div>
+          <details class="project-demo">
+            <summary>Show live preview</summary>
+            <div class="live-site-window">
+              <iframe class="live-site-iframe" title="Live preview of NexHaul Logistics" loading="lazy" data-src="https://nexhaul-logistics.vercel.app/"></iframe>
             </div>
-            <div class="project-info project-info-minimal">
-              <p>Website Development</p>
-              <h3>NexHaul Logistics</h3>
-              <div class="project-link">View Live Site ↗</div>
-            </div>
-          </a>
+            <a class="preview-fallback" href="assets/nexhaul-hero.jpg">View homepage screenshot</a>
+          </details>
         </article>
       </div>
     </section>
@@ -274,7 +268,7 @@
       <div class="section-heading reveal balanced-heading process-heading">
         <div>
           <p class="pill">Process</p>
-          <h2><span>A Clear Path From</span><span>Idea to Launch.</span></h2>
+          <h2><span>A Clear Path From</span> <span>Idea to Launch.</span></h2>
         </div>
         <p class="section-subtext">Simple steps, clear communication, and a final result designed around your business goals.</p>
       </div>
@@ -321,7 +315,7 @@
       <div class="section-heading reveal balanced-heading">
         <div>
           <p class="pill">Background</p>
-          <h2><span>Professional &amp;</span><span>Academic Background.</span></h2>
+          <h2><span>Professional &amp;</span> <span>Academic Background.</span></h2>
         </div>
         <p class="section-subtext">A quick look at the experience and education behind my work in operations, workflow automation, customer support, and web-focused projects.</p>
       </div>
@@ -329,7 +323,7 @@
       <div class="timeline">
         <article class="timeline-item reveal">
           <div class="timeline-date">Nov 2025 – Present</div>
-          <div class="timeline-marker">↗</div>
+          <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18"/></svg></div>
           <div class="timeline-card">
             <h3>Operations Associate &amp; Automation Specialist</h3>
             <h4>Vooma</h4>
@@ -345,7 +339,7 @@
 
         <article class="timeline-item reveal delay-1">
           <div class="timeline-date">Jan 2025 – Nov 2025</div>
-          <div class="timeline-marker">⌁</div>
+          <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></svg></div>
           <div class="timeline-card">
             <h3>Operations Manager &amp; Administrative Assistant</h3>
             <h4>DoodyCalls · Freelance</h4>
@@ -361,7 +355,7 @@
 
         <article class="timeline-item reveal delay-2">
           <div class="timeline-date">Feb 2025 – Nov 2025</div>
-          <div class="timeline-marker">✦</div>
+          <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18m-13 5 2 2 5-5"/></svg></div>
           <div class="timeline-card">
             <h3>Appointment Setter</h3>
             <h4>Woofie's · Freelance</h4>
@@ -377,7 +371,7 @@
 
         <article class="timeline-item reveal delay-3">
           <div class="timeline-date">Apr 2021 – Aug 2024</div>
-          <div class="timeline-marker">▣</div>
+          <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 11 18-7-7 18-3-8-8-3Z"/><path d="m11 14 4-4"/></svg></div>
           <div class="timeline-card">
             <h3>Social Media &amp; Operations Associate</h3>
             <h4>Oro Hi-Q Industries, Inc.</h4>
@@ -393,7 +387,7 @@
 
         <article class="timeline-item reveal delay-3">
           <div class="timeline-date">2024</div>
-          <div class="timeline-marker">✓</div>
+          <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V17c3 2.5 9 2.5 12 0v-5.5M22 9v6"/></svg></div>
           <div class="timeline-card">
             <h3>Bachelor of Science in Computer Science</h3>
             <h4>Xavier University – Ateneo de Cagayan</h4>
@@ -408,7 +402,7 @@
       </div>
     </section>
 
-<section class="section-pad contact-section" id="contact">
+    <section class="section-pad contact-section" id="contact">
       <div class="contact-card reveal">
         <p class="pill">Contact</p>
         <h2>Have a website or automation idea?</h2>
@@ -423,7 +417,7 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Marcus Paredes. Web Development & Automation.</p>
+    <p>© <span id="year">2026</span> Marcus Paredes. Web Development & Automation.</p>
     <a href="#top">Back to top</a>
   </footer>
 
